@@ -86,7 +86,7 @@ Finding PET preforms in the right size and thickness was a huge win for this pro
 
 ## Cap
 
-Once a good PET preform was sourced, a cap for the device was necessary.  This proved challenging because there are so many variations of thread designs.  Many prototypes were designed and printed before a workable matching cap thread was made.
+Once a good PET preform was sourced, a cap for the device was necessary.  This proved challenging because there are so many variations of thread designs.  Many prototypes were designed and printed before a workable matching cap thread was made.[^2]
 
 <table border="0" style="border:none;" cellpadding="0" cellspacing="0"><tr>
 <td style="padding:0; border:none;">
@@ -191,22 +191,85 @@ It's always a fun time getting new boards in and assembling them.  All of the pa
 
 # Marketing
 
-TODO: Youtube video
-TODO: Boot screen with Bat?
-TODO: User Manual?
+As part of the Christmas surprise, I really wanted to be able to make this present look like an "off the shelf" product.
+
+## Boot/Splash Screen
+
+I worked with a local artist to make a splash screen for the device.  
+
+TODO: Get picture of the original sketch from Liz
+
+## User Manual & YouTube Video
+
+Of course I needed a user manual.  A friend and local photographer helped me to get some professional pictures for the manual.  Assembling the manual was fun, but I ran into a critical issue where it was impossible to take pictures of the screen to document various menu features and operational modes.  
+
+After a bit of thinking, I was able to wire in a special command on the serial port to tell the device to take a "screen shot" of the current in-memory screen data and spit it out in CSV format to the console.  I wrote a second utility to process the CSV data into a PBM file[^3] which I could then convert into a PNG to paste into the manual.
+
+<table border="0" style="border:none;" cellpadding="0" cellspacing="0">
+<tr>
+<td style="border:none;" align="center" valign="middle">
+<img src="img/marketing/MainDisplayDiagram.png" valign="middle" align="center">
+</td>
+<td style="border:none;" align="center" valign="middle">
+<img src="img/marketing/BootFlow.jpg" valign="middle" align="center">
+</td>
+</tr>
+<tr>
+<td style="border:none;" align="center" valign="middle">
+<img src="img/marketing/Calibration.jpg" valign="middle" align="center">
+</td>
+<td style="border:none;" align="center" valign="middle">
+<img src="img/marketing/Appendix.jpg" valign="middle" align="center">
+</td>
+</tr>
+</table>
+
+In addition, a [YouTube video](https://youtu.be/yEi0v3Xhb24) was created, with a QR code on the box linking to it.
+
+TODO: Genny's website link
+
+## Packaging
+
+TODO: Box and insert, plastic wrapped device, etc.
 
 # Reception
 
-TODO: Christmas present
+Christmas Day was a fun time.  As expected, my wife was confused and surprised - she'd never heard of a "CavAir" and at first didn't know what it was.  She was super excited to turn it on and see her daughter's artwork as the splash image, and couldn't wait to get it underground and use it.
+
+<table border="0" style="border:none;" cellpadding="0" cellspacing="0">
+<tr>
+<td style="border:none;" align="center" valign="middle">
+<img src="img/Gift2.jpg" valign="middle" align="center">
+</td>
+<td style="border:none;" align="center" valign="middle">
+<img src="img/Gift1.jpg" valign="middle" align="center">
+</td>
+</tr>
+</table>
 
 # Real-World Use
+
+Half a dozen units have been deployed to the field for about two years now, and have seen a lot of use.
 
 <p align="center">
 <img src="img/DirtyCavAirMini.jpg" width="65%">
 </p>
 
-TODO: Disco Cave
-TODO: Phantom Cave
+TODO: Dirty and broken parts
+
+## Disco Cave
+
+A friend of mine used his unit extensively in San Saba County, TX - where many caves have dangerous levels of CO2.  On one particular day, they discovered a new cave, lowered the CavAir into it, and the CavAir immediately started beeping and flashing.  When they pulled the CavAir back out of the cave, it had maxed out the reading at over 4.5%.  Needless to say, they didn't enter the cave that day.
+
+## NCRC
+
+A couple of times a year, cavers attend training with the NCRC - learning how to rescue injured cavers in a cave and while on rope.  It's difficult training and is sometimes conducted in caves with noticable levels of CO2.  Several units have been used for this training event, ensuring that participants are not in danger while they conduct mock rescue drills.
+
+## Other Caving
+
+I've had the opportunity to take a CavAir into several caves in both Florida and Texas - where the readings were non-zero.  Generally as we descended into the cave, the levels increased.  In one case we elected to turn the trip because the level had gotten too high for everyone to be comfortable.  It should be said that in that case, the lighter trick was not indicating any issues, but the CavAir was showing CO2.
+
+I was also able to put the waterproof cap on a CavAir and take it cave diving - over 4000 feet into an underwater cave - and test the air in an air bell (sump).  I think this is the first time the air in that sump was tested, and absolutely the first time it was used in conjunction with a cave dive.  This is handy information - knowing whether or not a sump is a safe place to consider an exit point in case of a diving emergency is always nice.
 
 # Next Steps
 
@@ -227,5 +290,14 @@ I really like the size of the CavAirMini, but what if we could make an even smal
 There's still some users who want to use a galvanic O2 sensor, but this will increase the size of the enclosure.  I've recently found a larger preform that would fix this sensor, but it will require some work to make the sensor, a new board design, and a battery - fit.  And of course, a new cap would be necessary.
 
 
+## Are these for sale?
 
-[^1]: [Preforms](https://www.amazon.com/Soda-Bottle-Preforms-Caps-30/dp/B008MB1QNY) are what soda bottles start life as.  They're heated up and then air pressure is used to form them into a soda bottle mold.  In their non-expanded state, these are almost completely unbreakable, and an ideal size for carrying things like two 18650 batteries.  They're also waterproof when the cap is installed.  
+No.  A couple of challenges exist.
+1. The license for Fusion360 would need to be upgraded to a non-free model in order to sell anything made with the program.
+2. Liability is a major concern.
+3. Do I really want to support these products long-term?
+
+
+[^1]: [Preforms](https://www.amazon.com/Soda-Bottle-Preforms-Caps-30/dp/B008MB1QNY) are what soda bottles start life as.  They're heated up and then air pressure is used to form them into a soda bottle mold.  In their non-expanded state, these are almost completely unbreakable, and an ideal size for carrying things like two 18650 batteries.  They're also waterproof when the cap is installed.
+[^2]: [28mm soda bottle cap thread diagram](https://modulpac.se/wp-content/uploads/28phals.pdf)
+[^3]: [A plain text file format](https://oceancolor.gsfc.nasa.gov/staff/norman/seawifs_image_cookbook/faux_shuttle/pbm.html) that's easy to write for basic images like this. 
