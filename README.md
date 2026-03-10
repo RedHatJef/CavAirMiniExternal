@@ -108,7 +108,7 @@ The cap is designed to place a mushroom filter on the inner cap, and keep a rubb
 </td>
 </tr></table>
 
-TODO: Close-up of dirty cavair cap and plug
+Coming Soon: Close-up of dirty cavair cap and plug
 
 ## PCB Design
 
@@ -197,7 +197,7 @@ As part of the Christmas surprise, I really wanted to be able to make this prese
 
 I worked with a local artist to make a splash screen for the device.  
 
-TODO: Get picture of the original sketch from Liz
+Coming soon: Original splash screen sketch
 
 ## User Manual & YouTube Video
 
@@ -226,11 +226,9 @@ After a bit of thinking, I was able to wire in a special command on the serial p
 
 In addition, a [YouTube video](https://youtu.be/yEi0v3Xhb24) was created, with a QR code on the box linking to it.
 
-TODO: Genny's website link
-
 ## Packaging
 
-TODO: Box and insert, plastic wrapped device, etc.
+Coming Soon: Box and insert, plastic wrapped device, etc.
 
 # Reception
 
@@ -255,11 +253,15 @@ Half a dozen units have been deployed to the field for about two years now, and 
 <img src="img/DirtyCavAirMini.jpg" width="65%">
 </p>
 
-TODO: Dirty and broken parts
+Coming Soon: Dirty and broken parts
 
 ## Disco Cave
 
-A friend of mine used his unit extensively in San Saba County, TX - where many caves have dangerous levels of CO2.  On one particular day, they discovered a new cave, lowered the CavAir into it, and the CavAir immediately started beeping and flashing.  When they pulled the CavAir back out of the cave, it had maxed out the reading at over 4.5%.  Needless to say, they didn't enter the cave that day.
+<p align="center">
+<img src="img/DiscoCave.jpg" width="65%">
+</p>
+
+A friend of mine used his CavAirMini extensively in San Saba County, TX - where many caves have dangerous levels of CO2.  On one particular day, they discovered a new cave, lowered the CavAir into it, and the CavAir immediately started beeping and flashing.  When they pulled the CavAir back out of the cave, it had maxed out the reading at over 4.5%.  The cave was later named "Disco Cave" because the CavAir started flashing and beeping in ultimate alert mode after it was lowered into the cave.  Needless to say, they didn't enter the cave that day.  
 
 ## NCRC
 
@@ -289,13 +291,18 @@ I really like the size of the CavAirMini, but what if we could make an even smal
 
 There's still some users who want to use a galvanic O2 sensor, but this will increase the size of the enclosure.  I've recently found a larger preform that would fix this sensor, but it will require some work to make the sensor, a new board design, and a battery - fit.  And of course, a new cap would be necessary.
 
-
 ## Are these for sale?
 
 No.  A couple of challenges exist.
 1. The license for Fusion360 would need to be upgraded to a non-free model in order to sell anything made with the program.
 2. Liability is a major concern.
 3. Do I really want to support these products long-term?
+
+# Credits
+
+CavAirMini manual pictures and some of these page images by Genevieve Daniell — see more of her work at [www.genevievedaniell.com](http://www.genevievedaniell.com)
+
+Real world pictures from Ryan Hoffman, fellow caver.
 
 
 [^1]: [Preforms](https://www.amazon.com/Soda-Bottle-Preforms-Caps-30/dp/B008MB1QNY) are what soda bottles start life as.  They're heated up and then air pressure is used to form them into a soda bottle mold.  In their non-expanded state, these are almost completely unbreakable, and an ideal size for carrying things like two 18650 batteries.  They're also waterproof when the cap is installed.
